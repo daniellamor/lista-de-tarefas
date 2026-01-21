@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #dbcbcb31; 
+    color: #333; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+/* Container principal */
+.todo-container {
+    background: hsla(0, 2%, 51%, 0.322); 
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); 
+    text-align: center;
+}
+
+.todo-container h1 {
+    color: #f700ff; 
+    margin-bottom: 25px;
+}
+
+/* Input e botão */
+.input-tarefa {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-tarefa input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #f700ff; 
+    border-radius: 25px 0 0 25px;
+    background: #ffffff; 
+    color: #333; 
+}
+
+.input-tarefa input:focus {
+    outline: none;
+    border-color: #f700ff; 
+}
+
+.input-tarefa button {
+    padding: 12px 20px;
+    border: 2px solid #f700ff;
+    border-left: none;
+    background: #bf00ff; 
+    color: #000;
+    font-weight: bold;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-tarefa button:hover {
+    background: #bf00ff;
+}
+
+/* Tabela de tarefas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #737272; 
+}
+
+th {
+    color: #bf00ff; 
+    font-weight: 600;
+}
+
+tbody tr {
+    background: #e0e0e0; 
+    transition: 0.3s;
+}
+
+tbody tr:hover {
+    background: #d0d0d0; 
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #777; 
+}
+
+/* Botão de ação */
+.btn-remover {
+    background: #ff6666;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-remover:hover {
+    background: #ff3333; 
+}
